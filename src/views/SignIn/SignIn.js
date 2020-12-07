@@ -141,7 +141,7 @@ const SignIn = props => {
   }, [formState.values])
 
   const handleAzureAADSignIn = event => {
-    event.preventDefault();
+    event.preventDefault()
     auth.setProvider(auth.providers.azureAAD)
     auth.signIn()
   }
