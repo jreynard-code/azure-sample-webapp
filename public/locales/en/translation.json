@@ -152,6 +152,11 @@
         "tab": {
           "title": "Scenario"
         }
+      },
+      "dashboards": {
+        "tab": {
+          "title": "Dashboards"
+        }
       }
     }
   }

@@ -152,6 +152,11 @@
         "tab": {
           "title": "Jumeaux numériques"
         }
+      },
+      "dashboards": {
+        "tab": {
+          "title": "Résultats"
+        }
       }
     }
   }
