@@ -1,7 +1,7 @@
 // Copyright (c) Cosmo Tech.
 // Licensed under the MIT license.
 
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Card, Grid } from '@material-ui/core';
@@ -39,6 +39,8 @@ const Scenario = ({
   currentScenario
 }) => {
   const { t } = useTranslation();
+
+  const [editMode, setEditMode] = useState(false);
 
   return (
   // <Grid container spacing={2} direction="column" className={classes.mainGrid}>
@@ -85,7 +87,7 @@ const Scenario = ({
           iframeTitle="Dashboard"
           url="https://app.powerbi.com/reportEmbed?reportId=018525c4-3fed-49e7-9048-6d6237e80145&autoAuth=true&ctid=e9641c78-d0d6-4d09-af63-168922724e7f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWZyYW5jZS1jZW50cmFsLWEtcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D"
         /> */}
-        <Card>
+        <Card style={{ height: '400px' }}>
           <IframeScenarioResults
             cardStyle={ { height: '100%', width: '100%' } }
             iframeTitle={t('commoncomponents.iframe.scenario.results.iframe.title', 'Supply Chain results')}
@@ -98,7 +100,7 @@ const Scenario = ({
       </Grid>
       <Grid item xs={12}>
         <Card>
-          <ScenarioParameters/>
+          <ScenarioParameters editMode={editMode} changeEditMode={setEditMode}/>
         </Card>
       </Grid>
     </Grid>
