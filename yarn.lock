@@ -1171,10 +1171,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
-  version "7.15.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
-  integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.0.tgz#e27b977f2e2088ba24748bf99b5e1dece64e4f0b"
+  integrity sha512-Nht8L0O8YCktmsDV6FqFue7vQLRx3Hb0B37lS5y0jDRqRxlBG4wIJHnf9/bgSE2UyipKFA01YtS+npRdTWBUyw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -3513,7 +3513,7 @@ broccoli-output-wrapper@^3.2.5:
     heimdalljs-logger "^0.1.10"
     symlink-or-copy "^1.2.0"
 
-broccoli-plugin@^4.0.5:
+broccoli-plugin@^4.0.7:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/broccoli-plugin/-/broccoli-plugin-4.0.7.tgz#dd176a85efe915ed557d913744b181abe05047db"
   integrity sha512-a4zUsWtA1uns1K7p9rExYVYG99rdKeGRymW0qOCNkvDPHQxVi3yVyJHhQbM3EZwdt2E0mnhr5e0c/bPpJ7p3Wg==
@@ -6977,12 +6977,13 @@ i18next-http-backend@^1.3.1:
   dependencies:
     cross-fetch "3.1.4"
 
-i18next-parser@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/i18next-parser/-/i18next-parser-4.7.0.tgz#18471cc92074a31bdc132044d0a6084b02b22cd7"
-  integrity sha512-oRPNf68ibfrheEdbcT7Vp769Es/qKPR20Eg3hPcGesOn/XSJ3faMCtyy0FBSdmiof16/jD535UxAobERW2HreQ==
+i18next-parser@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/i18next-parser/-/i18next-parser-5.1.0.tgz#776e8672849b1f7f86d3fb242d2214f1ad9eea00"
+  integrity sha512-6zPBouDkV9j3FZZoZUb6XlNJMje2sD68z0jVccSiQk4TGAcp9zZh3DliBzi3zvWyx8Ek+x4/OqYQ7EyHw8rxlw==
   dependencies:
-    broccoli-plugin "^4.0.5"
+    "@babel/runtime" "^7.15.4"
+    broccoli-plugin "^4.0.7"
     cheerio "^1.0.0-rc.2"
     colors "~1.4.0"
     commander "~8.2.0"
@@ -6990,19 +6991,27 @@ i18next-parser@^4.7.0:
     eol "^0.9.1"
     fs-extra "^10.0.0"
     gulp-sort "^2.0.0"
-    i18next "^20.2.1"
+    i18next "^21.2.0"
     js-yaml "4.1.0"
     rsvp "^4.8.2"
+    sort-keys "^4.2.0"
     through2 "~4.0.2"
     typescript "^4.2.4"
     vinyl "~2.2.1"
     vinyl-fs "^3.0.2"
     vue-template-compiler "^2.6.11"
 
-i18next@^20.2.1, i18next@^20.6.1:
+i18next@^20.6.1:
   version "20.6.1"
   resolved "https://registry.yarnpkg.com/i18next/-/i18next-20.6.1.tgz#535e5f6e5baeb685c7d25df70db63bf3cc0aa345"
   integrity sha512-yCMYTMEJ9ihCwEQQ3phLo7I/Pwycf8uAx+sRHwwk5U9Aui/IZYgQRyMqXafQOw5QQ7DM1Z+WyEXWIqSuJHhG2A==
+  dependencies:
+    "@babel/runtime" "^7.12.0"
+
+i18next@^21.2.0:
+  version "21.4.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-21.4.1.tgz#3af1a15994eb5240e9526a5c75c5d2cf931e0c48"
+  integrity sha512-uTCDfoMKTX6b/Amss7w/hQU8NV80ahmoKKNYUg0qbLbtUAMvYIWS2VvCCeNEGQIaEjyC4GV4W+iQbBcv3A/ViA==
   dependencies:
     "@babel/runtime" "^7.12.0"
 
@@ -7507,6 +7516,11 @@ is-plain-obj@^1.0.0, is-plain-obj@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
   integrity sha1-caUMhCnfync8kqOQpKA7OfzVHT4=
+
+is-plain-obj@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
+  integrity sha512-YWnfyRwxL/+SsrWYfOpUtz5b3YD+nyfkHvjbcanzk8zgyO4ASD67uVMRt8k5bM4lLMDnXfriRhOpemw+NfT1eA==
 
 is-plain-obj@^3.0.0:
   version "3.0.0"
@@ -12256,6 +12270,13 @@ sort-keys@^1.0.0:
   integrity sha1-RBttTTRnmPG05J6JIK37oOVD+a0=
   dependencies:
     is-plain-obj "^1.0.0"
+
+sort-keys@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-4.2.0.tgz#6b7638cee42c506fff8c1cecde7376d21315be18"
+  integrity sha512-aUYIEU/UviqPgc8mHR6IW1EGxkAXpeRETYcrzg8cLAvUPZcpAlleSXHV2mY7G12GphSH6Gzv+4MMVSSkbdteHg==
+  dependencies:
+    is-plain-obj "^2.0.0"
 
 source-list-map@^2.0.0:
   version "2.0.1"
